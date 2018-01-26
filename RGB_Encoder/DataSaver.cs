@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace RGB_Encoder
 {
+    /// <summary>
+    /// Класс в котором сохраняются все элементы формы
+    /// </summary>
     [Serializable]
     public class DataSaver : ISave
     {

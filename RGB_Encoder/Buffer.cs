@@ -48,7 +48,9 @@ namespace RGB_Encoder
             if (form3 != null)
                 form3.Close();
         }
-
+        /// <summary>
+        /// Сохранение
+        /// </summary>
         public static void Save(DataSaver dataSaver,string path)
         {
             BinaryFormatter bf = new BinaryFormatter();
@@ -57,7 +59,9 @@ namespace RGB_Encoder
                 bf.Serialize(fs, dataSaver);
             }
         }
-
+        /// <summary>
+        /// Загрузка сохранения
+        /// </summary>
         public static ISave Upload(string path)
         {
             DataSaver dataSaver;

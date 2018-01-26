@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace RGB_Encoder
 {
+   /// <summary>
+   /// Интерфейс для класса-хранителя данных формы
+   /// </summary>
    public interface ISave
     {
         string text { set; get; }

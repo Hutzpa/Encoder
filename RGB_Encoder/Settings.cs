@@ -8,6 +8,9 @@ namespace RGB_Encoder
 {
    public static class Settings
     {
+        /// <summary>
+        /// Сохранять ли данные перед выходом
+        /// </summary>
         public static bool SaveWhenQuit;
     }
 }
