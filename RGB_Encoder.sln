@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGB_Encoder", "RGB_Encoder\RGB_Encoder.csproj", "{5B434C47-0FDC-4458-82DE-D32C4AD916EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B434C47-0FDC-4458-82DE-D32C4AD916EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B434C47-0FDC-4458-82DE-D32C4AD916EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B434C47-0FDC-4458-82DE-D32C4AD916EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B434C47-0FDC-4458-82DE-D32C4AD916EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F624065C-5CB8-4A49-AE6F-3C1B387B664C}
+	EndGlobalSection
+EndGlobal
