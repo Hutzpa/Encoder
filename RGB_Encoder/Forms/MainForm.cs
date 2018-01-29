@@ -20,9 +20,18 @@ namespace RGB_Encoder
             DataSaver dataDecode = (DataSaver)Settings.Upload(Settings.pathDecode);
             UpdateDecode(dataDecode);
         }
+        /// <summary>
+        /// Обхект формы настроек
+        /// </summary>
         private SettingsForm settingsForm = new SettingsForm();
+        /// <summary>
+        /// Обхект дилогового окна 
+        /// </summary>
         private OpenFileDialog openFileEncode = new OpenFileDialog();
 
+        /// <summary>
+        /// Нажание на кнопку "Загрузить картинку" для декодировки
+        /// </summary> 
         private void buttonUploadEncode_Click(object sender, EventArgs e)
         {
             openFileEncode.Filter = "(*.jpg;*.png)|*.jpg;*.png;";
@@ -36,6 +45,9 @@ namespace RGB_Encoder
             }
         }
 
+        /// <summary>
+        /// Нажание на кнопку "КодироватЬ"
+        /// </summary> 
         private void buttonEncode_Click(object sender, EventArgs e)
         {
             if (pictureBoxEncode.Image != null)
@@ -44,9 +56,14 @@ namespace RGB_Encoder
                 MessageBox.Show("Select image first");
         }
 
-
+        /// <summary>
+        /// Обхект дилогового окна 
+        /// </summary>
         private OpenFileDialog openFileDecode = new OpenFileDialog();
 
+        /// <summary>
+        /// Нажание на кнопку "Загрузить картинку" для декодировки
+        /// </summary> 
         private void button1_Click(object sender, EventArgs e)
         {
             openFileDecode.Filter = "(*.jpg;*.png)|*.jpg;*.png;";
@@ -60,6 +77,9 @@ namespace RGB_Encoder
             }
         }
 
+        /// <summary>
+        /// Нажание на кнопку "ДекодироватЬ"
+        /// </summary> 
         private void button2_Click(object sender, EventArgs e)
         {
             if (pictureBoxDecode.Image != null)
@@ -68,11 +88,17 @@ namespace RGB_Encoder
                 MessageBox.Show("Выберите сначала картинку");
         }
 
+        /// <summary>
+        /// Кнопка вызова формы настроек 
+        /// </summary> 
         private void SettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             settingsForm.Show();
         }
 
+        /// <summary>
+        /// Кнопка "Выход"
+        /// </summary>  
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Settings.SaveWhenQuit)
@@ -85,6 +111,9 @@ namespace RGB_Encoder
            Close();
         }
 
+        /// <summary>
+        /// Метод обновления данных полей отвечающих за кодировку
+        /// </summary>  
         private void UpdateEncode(DataSaver dataSaver)
         {
             pictureBoxEncode.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -93,6 +122,9 @@ namespace RGB_Encoder
             pictureBoxEncode.Image = dataSaver.img;
         }
 
+        /// <summary>
+        /// Метод обновления данных полей отвечающих за декодировку
+        /// </summary>  
         private void UpdateDecode(DataSaver dataSaver)
         {
             pictureBoxDecode.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -101,6 +133,9 @@ namespace RGB_Encoder
             pictureBoxDecode.Image = dataSaver.img;
         }
 
+        /// <summary>
+        /// Метод кодировки сообщения 
+        /// </summary>  
         private void Encode()
         {
             Bitmap img = new Bitmap(pictureBoxEncode.Image);
@@ -130,6 +165,9 @@ namespace RGB_Encoder
             }
         }
 
+        /// <summary>
+        /// Метод декодировки сообщения
+        /// </summary>  
         private void Decode()
         {
             Bitmap img = new Bitmap(pictureBoxDecode.Image);
@@ -156,6 +194,9 @@ namespace RGB_Encoder
             richTextBoxDecode.Text = mesg;
         }
 
+        /// <summary>
+        /// Кнопка "Очистить"
+        /// </summary>     
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBoxDecode.Text = "";
