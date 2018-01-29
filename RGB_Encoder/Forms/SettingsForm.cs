@@ -18,16 +18,21 @@ namespace RGB_Encoder
         }
 
         /// <summary>
+        /// Сохранять ли данные перед выходом
+        /// </summary>
+        public bool SaveWhenQuit = true;
+
+        /// <summary>
         /// Переключатель состояния сохранять\не сохранять
         /// </summary>
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (Settings.SaveWhenQuit == false)
-                Settings.SaveWhenQuit = true;
+            if (SaveWhenQuit == false)
+                SaveWhenQuit = true;
             else
-                Settings.SaveWhenQuit = false;
+                SaveWhenQuit = false;
 
-            MessageBox.Show(Settings.SaveWhenQuit.ToString());
+            MessageBox.Show(SaveWhenQuit.ToString());
         }
 
         /// <summary>

@@ -15,9 +15,9 @@ namespace RGB_Encoder
         public MainForm()
         {
             InitializeComponent();
-            DataSaver dataEncode = (DataSaver)Settings.Upload(Settings.pathEncode);
+            DataSaver dataEncode = (DataSaver)Loader.Upload(Loader.pathEncode);
             UpdateEncode(dataEncode);
-            DataSaver dataDecode = (DataSaver)Settings.Upload(Settings.pathDecode);
+            DataSaver dataDecode = (DataSaver)Loader.Upload(Loader.pathDecode);
             UpdateDecode(dataDecode);
         }
         /// <summary>
@@ -101,12 +101,12 @@ namespace RGB_Encoder
         /// </summary>  
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Settings.SaveWhenQuit)
+            if (settingsForm.SaveWhenQuit)
             {
                 DataSaver dataSaverEncode = new DataSaver(richTextBoxEncode.Text, label3.Text, pictureBoxEncode.Image);
-                Settings.Save(dataSaverEncode, Settings.pathEncode);
+                Loader.Save(dataSaverEncode, Loader.pathEncode);
                 DataSaver dataSaverDecode = new DataSaver(richTextBoxDecode.Text, label4.Text, pictureBoxDecode.Image);
-                Settings.Save(dataSaverDecode, Settings.pathDecode);
+                Loader.Save(dataSaverDecode, Loader.pathDecode);
             }
            Close();
         }

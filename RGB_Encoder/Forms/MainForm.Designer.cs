@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.richTextBoxEncode = new System.Windows.Forms.RichTextBox();
             this.buttonEncode = new System.Windows.Forms.Button();
             this.pictureBoxEncode = new System.Windows.Forms.PictureBox();
@@ -187,6 +188,7 @@
             this.Controls.Add(this.pictureBoxEncode);
             this.Controls.Add(this.buttonUploadEncode);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";

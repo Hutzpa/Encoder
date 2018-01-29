@@ -8,13 +8,8 @@ using System.Threading.Tasks;
 
 namespace RGB_Encoder
 {
-   public static class Settings
+   public static class Loader
     {
-        /// <summary>
-        /// Сохранять ли данные перед выходом
-        /// </summary>
-        public static bool SaveWhenQuit = true;
-
         /// <summary>
         /// Путь для сохранения данных с формы 2
         /// </summary>
