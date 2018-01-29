@@ -26,6 +26,8 @@ namespace RGB_Encoder
                 Settings.SaveWhenQuit = true;
             else
                 Settings.SaveWhenQuit = false;
+
+            MessageBox.Show(Settings.SaveWhenQuit.ToString());
         }
 
         /// <summary>
@@ -33,7 +35,6 @@ namespace RGB_Encoder
         /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
-            Buffer.form1.Show();
             Hide();
         }
     }
