@@ -51,7 +51,20 @@ namespace RGB_Encoder
         private void buttonEncode_Click(object sender, EventArgs e)
         {
             if (pictureBoxEncode.Image != null)
-                Encode();
+            {
+                try
+                {
+                    Encode();
+                }
+                catch(ArgumentException ae)
+                {
+                    MessageBox.Show("NO RUSSIAN");
+                    Clipboard.SetText(richTextBoxEncode.Text);
+                    richTextBoxEncode.Text = null;
+                    MessageBox.Show("Текст скопирован в буфер обмена, к кодировке пригоден только латинский алфавит");
+
+                }
+            }
             else
                 MessageBox.Show("Select image first");
         }
