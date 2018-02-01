@@ -37,8 +37,8 @@
             this.buttonDecode = new System.Windows.Forms.Button();
             this.pictureBoxDecode = new System.Windows.Forms.PictureBox();
             this.buttonUploadDecode = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelPathEncode = new System.Windows.Forms.Label();
+            this.labelPathDecode = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -123,21 +123,21 @@
             this.buttonUploadDecode.UseVisualStyleBackColor = true;
             this.buttonUploadDecode.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label3
+            // labelPathEncode
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(135, 255);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 26;
+            this.labelPathEncode.AutoSize = true;
+            this.labelPathEncode.Location = new System.Drawing.Point(135, 255);
+            this.labelPathEncode.Name = "labelPathEncode";
+            this.labelPathEncode.Size = new System.Drawing.Size(0, 13);
+            this.labelPathEncode.TabIndex = 26;
             // 
-            // label4
+            // labelPathDecode
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(135, 486);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
-            this.label4.TabIndex = 27;
+            this.labelPathDecode.AutoSize = true;
+            this.labelPathDecode.Location = new System.Drawing.Point(135, 486);
+            this.labelPathDecode.Name = "labelPathDecode";
+            this.labelPathDecode.Size = new System.Drawing.Size(0, 13);
+            this.labelPathDecode.TabIndex = 27;
             // 
             // menuStrip1
             // 
@@ -177,8 +177,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 535);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelPathDecode);
+            this.Controls.Add(this.labelPathEncode);
             this.Controls.Add(this.richTextBoxDecode);
             this.Controls.Add(this.buttonDecode);
             this.Controls.Add(this.pictureBoxDecode);
@@ -210,8 +210,8 @@
         private System.Windows.Forms.Button buttonDecode;
         private System.Windows.Forms.PictureBox pictureBoxDecode;
         private System.Windows.Forms.Button buttonUploadDecode;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelPathEncode;
+        private System.Windows.Forms.Label labelPathDecode;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;

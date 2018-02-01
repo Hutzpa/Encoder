@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coder.cs" />
     <Compile Include="DataSaver.cs" />
     <Compile Include="ISave.cs" />
     <Compile Include="Forms\MainForm.cs">

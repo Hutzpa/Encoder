@@ -23,7 +23,7 @@ namespace RGB_Encoder
         /// <summary>
         /// Сохранение
         /// </summary>
-        public static void Save(ISave dataSaver, string path)
+        public static void Save<Type>(Type dataSaver, string path)
         {
             BinaryFormatter bf = new BinaryFormatter();
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
@@ -34,7 +34,7 @@ namespace RGB_Encoder
         /// <summary>
         /// Загрузка сохранения
         /// </summary>
-        public static ISave Upload(string path)
+        public static DataSaver Upload(string path)
         {
             DataSaver dataSaver;
             if (File.Exists(path))
